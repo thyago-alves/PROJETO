@@ -65,7 +65,7 @@
   		<form class="row g-3 needs-validation">
   			<div class="col-md-12">
   			  <label for="validationCustom01" class="form-label">Cadastrante</label>
-  			  <input type="text" class="form-control" id="validationCustom01" placeholder="ETURB" name="Cadastrante">
+  			  <input type="text" class="form-control" id="validationCustom01" placeholder="Seu Nome.." name="Cadastrante">
   			  <div class="valid-feedback">
   				Looks good!
   			  </div>
@@ -79,12 +79,12 @@
   			</div>
 
   			<div class="col-md-4">
-  				<label for="validationCustom04" class="form-label">Tamanho do buraco</label>
+  				<label for="validationCustom04" class="form-label">Tipo de Denúncia</label>
   				<select class="form-select" id="validationCustom04" name="Tamanho">
-  				  <option>Pequeno</option>
-  				  <option>Medio</option>
-  				  <option>Grande</option>
-				  <option>Cano furado</option>
+  				  <option>Desmatamento</option>
+  				  <option>Queimada</option>
+  				  <option>Corte de Árvore</option>
+				  <option>Descarte inadequado de lixo</option>
   				</select>
   				<div class="invalid-feedback">
   				  Please select a valid state.
@@ -92,11 +92,11 @@
   			</div>
 
   			<div class="col-md-4">
-  				<label for="validationCustom04" class="form-label">Cobertura</label>
+  				<label for="validationCustom04" class="form-label">Local</label>
   				<select class="form-select" id="validationCustom04" name="Revestimento">
-  				  <option>Asfalto</option>
-  				  <option>Cascalho</option>
-  				  <option>Paralelepipedo</option>
+  				  <option>Público</option>
+  				  <option>Privado</option>
+  				  <option>Não espécificar</option>
   				</select>
   			</div>
 
@@ -279,7 +279,7 @@ document.querySelector('form').addEventListener('submit', handleSubmit);
                 'data': data
               },
               'paint': {
-                'circle-color': '#EF9A31',
+                'circle-color': '#3CB371',
                 'circle-radius': 5,
                 'circle-stroke-width': 1,
                 'circle-stroke-color': '#ffffff'
